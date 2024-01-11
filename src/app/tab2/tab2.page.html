@@ -1,17 +1,72 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title> Praias </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+
+    <ion-item-sliding>
+      <ion-item href="https://praiadospadres.com.br/" target="_blank">
+        <ion-thumbnail slot="start">
+          <img
+            alt=""
+            src="https://www.es.gov.br/Media/PortalES/_Profiles/c4d8c6e6/d8d1f292/Rampa_monjolo.jpg?v=638145798258975870"
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praia dos Padres</h2>
+          </ion-text>
+          <p>Guarapari</p>
+        </ion-label>
+        <ion-note slot="end">Norte</ion-note>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="openSite('https://praiadospadres.com.br/')">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item
+        href="https://dicasdonossobrasil.com.br/maceio/praia-de-riacho-doce-em-maceio/"
+        target="_blank"
+      >
+        <ion-thumbnail slot="start">
+          <img
+            alt=""
+            src="https://www.praias-360.com.br/img-600/al/maceio/al-maceio-praia-de-riacho-doce-010.jpg"
+          />
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praia de Riacho Doce</h2>
+          </ion-text>
+          <p>Alagoas</p>
+        </ion-label>
+        <ion-note slot="end">Sul</ion-note>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="openSite('https://dicasdonossobrasil.com.br/maceio/praia-de-riacho-doce-em-maceio/')">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
 </ion-content>

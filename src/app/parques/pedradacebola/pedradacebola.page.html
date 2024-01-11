@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Parque Pedra da Cebola</ion-title>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/tabs/tab3']">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item>
+      <ion-icon slot="start" name="navigate-circle-outline"></ion-icon>
+      <ion-label>Endereço</ion-label>
+      <ion-button
+        fill="outline"
+        href="https://www.google.com/maps/dir//R.+Ana+Vi%C3%AAira+Mafra,+s%2Fn+-+Mata+da+Praia,+Vit%C3%B3ria+-+ES,+29066-010/@-21.8773479,-46.2003072,7z/data=!4m8!4m7!1m0!1m5!1m1!1s0xb81804ad481d6f:0x71875203a67637ac!2m2!1d-40.2977346!2d-20.2765669?entry=ttu"
+        target="_blank"
+        >Ver no mapa</ion-button
+      >
+    </ion-item>
+
+    <ion-card-content class="ion-text-justify">
+      O Parque Pedra da Cebola está localizado no município brasileiro de
+      Vitória, entre os bairros Jardim da Penha e Mata da Praia, na zona
+      continental do município, no estado do Espírito Santo. O parque possui
+      100.005 metros quadrados e conta com uma vegetação típica de restinga.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon slot="start" name="time-outline"></ion-icon>
+      <ion-label>Horário de funcionamento</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      De terça a domingo, das 5 às 22 horas.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-icon slot="start" name="wifi-outline"></ion-icon>
+      <ion-label>Wifi livre</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="happy-outline"></ion-icon>
+      <ion-label>Parquinhos</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="football-outline"></ion-icon>
+      <ion-label>Campo de futebol</ion-label>
+    </ion-item>
+
+  </ion-card>
+
+</ion-content>

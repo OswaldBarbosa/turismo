@@ -1,17 +1,61 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title> Conheça o Espírito Santo </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="https://www.es.gov.br/Media/PortalES/_Profiles/c4d8c6e6/2b07643f/Convento,%20Vila%20Velha%20-%20Yuri%20Barichivich.jpg?v=637782329529332280"></ion-img>
+      <ion-card-title>Terra maravilhosa</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-justify">
+      O Espírito Santo, estado da região Sudeste do Brasil, é conhecido por suas praias tropicais e áreas naturais montanhosas preservadas.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Segmentos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item href="https://descubraoespiritosanto.es.gov.br/segmento/agroturismo" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Agroturismo no Espírito Santo" src="https://www.lotescbl.com.br/wp-content/uploads/2017/10/d_57cefb4b007ab-1.jpg" />
+          </ion-thumbnail>
+          <ion-label>Agroturismo</ion-label>
+          <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+
+        <ion-item href="https://www.es.gov.br/Noticia/espirito-santo-aventura-e-com-a-gente" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Pessoas pulando de paraquedas em um dia ensolarado" src="https://www.es.gov.br/Media/PortalES/_Profiles/c4d8c6e6/d8d1f292/Rampa_monjolo.jpg?v=638145798258975870" />
+          </ion-thumbnail>
+          <ion-label>Aventura</ion-label>
+          <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+
+        <ion-item href="https://descubraoespiritosanto.es.gov.br/segmento/ecoturismo-aventura" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://observatoriodoturismo.es.gov.br/Media/observatorio/_Profiles/c4d8c6e6/823d9508/Cachoeira%20da%20Fuma%C3%A7a%20-%20Alegre%20(1%20de%201)%20foto%20-%20YURI%20BARICHIVICH.jpg?v=637781340762308990" />
+          </ion-thumbnail>
+          <ion-label>Ecoturismo</ion-label>
+          <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+
+        <ion-item lines="none" href="https://g1.globo.com/es/espirito-santo/noticia/2023/01/03/parques-naturais-do-es-contam-com-trilhas-e-mirantes-conheca-os-principais.ghtml" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2018/07/Pedra-Azul-Rota-do-Lagarto-ES-shutterstock_1119002801.jpg" />
+          </ion-thumbnail>
+          <ion-label>Parques</ion-label>
+          <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
